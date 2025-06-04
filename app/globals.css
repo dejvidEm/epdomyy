@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode Defaults (will be overridden by .dark) */
+    --background: 0 0% 100%; /* white */
+    --foreground: 215 28% 17%; /* dark slate blue/gray text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    --primary: 205 48% 42%; /* Muted Slate Blue: #3B668F */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 210 40% 96.1%; /* very light gray/blue */
+    --secondary-foreground: 205 48% 32%; /* darker slate blue for text on secondary */
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 20% 45%; /* medium gray text */
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 205 48% 32%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 40% 90%; /* light gray border */
+    --input: 210 40% 90%;
+    --ring: 205 48% 52%; /* slightly lighter primary for ring */
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 18% 16%; /* Dark Slate Gray: #23282E */
+    --foreground: 210 40% 93%; /* Light Gray/Off-white text: #E8ECF2 */
+
+    --card: 220 18% 16%;
+    --card-foreground: 210 40% 93%;
+
+    --popover: 220 18% 13%; /* Slightly darker for popovers */
+    --popover-foreground: 210 40% 93%;
+
+    --primary: 205 48% 52%; /* Muted Slate Blue (slightly lighter for dark mode): #5482AE */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 220 18% 20%; /* Darker Slate Gray for secondary elements */
+    --secondary-foreground: 210 40% 85%; /* Lighter text for secondary elements */
+
+    --muted: 220 18% 20%;
+    --muted-foreground: 210 40% 65%; /* Muted text color */
+
+    --accent: 205 48% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 18% 25%; /* Softer border color */
+    --input: 220 18% 25%;
+    --ring: 205 48% 62%; /* Lighter primary for ring in dark mode */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+}
