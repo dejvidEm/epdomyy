@@ -110,7 +110,7 @@ export const projects: Project[] = [
       "/apoli/1-den.jpg",
       "/apoli/3-den.jpg",
       "/apoli/15-den.jpg",
-      "/apoli/20-den..jpg",
+      "/apoli/20-den.jpg",
       "/apoli/50-den.jpg",
       "/apoli/70-den.jpg",
       "/apoli/183-den.jpg",
