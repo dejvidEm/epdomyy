@@ -35,12 +35,16 @@ export default function AboutPreviewSection() {
             </Button>
           </div>
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
-            <Image
-              src="/placeholder.svg?width=600&height=400"
-              alt="Stavebný tím pri plánovaní" // Translated
-              fill
-              className="object-cover"
-            />
+          <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      >
+        <source src="/banner.mp4" type="video/mp4" />
+        Váš prehliadač nepodporuje HTML5 video.
+      </video>
           </div>
         </div>
       </div>
