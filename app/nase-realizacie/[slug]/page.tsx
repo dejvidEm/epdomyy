@@ -16,8 +16,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const project = getProjectBySlug(params.slug)
+export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
+  const resolvedParams = await params;
+  const project = getProjectBySlug(resolvedParams.slug)
 
   if (!project) {
     notFound()
@@ -64,7 +65,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             )}
 
             <Button asChild size="lg" className="w-full mt-8">
-              <Link href="/contact">Start Your Project With Us</Link>
+              <Link href="/contact">
+                <span>Start Your Project With Us</span>
+              </Link>
             </Button>
           </div>
         </div>

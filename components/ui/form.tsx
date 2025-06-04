@@ -109,6 +109,11 @@ const FormControl = React.forwardRef<
 >(({ ...props }, ref) => {
   const { error, formItemId, formDescriptionId, formMessageId } = useFormField()
 
+  if (!React.isValidElement(props.children)) {
+    console.warn("FormControl expects a single React element as a child")
+    return null
+  }
+
   return (
     <Slot
       ref={ref}

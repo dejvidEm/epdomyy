@@ -50,7 +50,9 @@ export default function HeroSection() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-10 py-3 text-base font-medium transition-all duration-300"
             >
-              <Link href="/aktualna-ponuka">Nájsť dom</Link> {/* Translated */}
+              <Link href="/aktualna-ponuka">
+                <span>Nájsť dom</span>
+              </Link>
             </Button>
           </motion.div>
         </div>

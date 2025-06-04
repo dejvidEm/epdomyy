@@ -20,8 +20,10 @@ export default function FeaturedItemsSection({ title, items, viewAllLink, itemTy
         <div className="flex justify-between items-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">{title}</h2>
           <Button asChild variant="outline">
-            <Link href={viewAllLink} className="flex items-center gap-2">
-              Zobraziť všetko <ArrowRight className="h-4 w-4" /> {/* Translated */}
+            <Link href={viewAllLink}>
+              <span className="flex items-center gap-2">
+                Zobraziť všetko <ArrowRight className="h-4 w-4" />
+              </span>
             </Link>
           </Button>
         </div>
@@ -45,7 +47,9 @@ export default function FeaturedItemsSection({ title, items, viewAllLink, itemTy
               <CardFooter>
                 <Button asChild variant="link" className="p-0 h-auto text-primary">
                   <Link href={`/${itemType}/${item.slug}`}>
-                    Zistiť viac <ArrowRight className="h-4 w-4 ml-1" /> {/* Translated */}
+                    <span className="flex items-center">
+                      Zistiť viac <ArrowRight className="h-4 w-4 ml-1" />
+                    </span>
                   </Link>
                 </Button>
               </CardFooter>

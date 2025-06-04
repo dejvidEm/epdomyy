@@ -50,7 +50,9 @@ export default function HouseCard({ house }: HouseCardProps) {
       <CardFooter>
         <Button asChild variant="default" className="w-full">
           <Link href={`/aktualna-ponuka/${house.slug}`}>
-            Zobraziť detaily <ArrowRight className="h-4 w-4 ml-2" /> {/* Translated */}
+            <span className="flex items-center justify-center">
+              Zobraziť detaily <ArrowRight className="h-4 w-4 ml-2" />
+            </span>
           </Link>
         </Button>
       </CardFooter>

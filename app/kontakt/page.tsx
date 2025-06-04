@@ -1,4 +1,3 @@
-import AnimatedSection from "@/components/animated-section"
 import ContactForm from "@/components/contact/contact-form"
 import { Mail, Phone, MapPinIcon } from "lucide-react"
 

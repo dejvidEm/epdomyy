@@ -12,7 +12,7 @@ export default function ContactBanner() {
           bezplatnú konzultáciu. {/* Translated */}
         </p>
         <Button asChild variant="secondary" size="lg">
-          <Link href="/kontakt">Kontaktujte nás</Link> {/* Translated */}
+          <Link href="/kontakt"><span>Kontaktujte nás</span></Link>
         </Button>
       </div>
     </AnimatedSection>

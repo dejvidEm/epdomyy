@@ -86,16 +86,17 @@ export default function Header() {
                   <Button
                     variant="ghost"
                     className={cn(
-                      NavLinkClasses(item.href), // Main link can also be active
+                      NavLinkClasses(item.href),
                       "flex items-center gap-1 px-3 py-2 hover:bg-foreground/5",
-                      // Check if any subItem is active for the main dropdown trigger
                       item.subItems?.some((sub) => pathname.startsWith(sub.href)) && !pathname.endsWith(item.href!)
                         ? "text-primary"
                         : "",
                     )}
                   >
-                    {item.label}
-                    <ChevronDown className="h-4 w-4" />
+                    <span className="flex items-center gap-1">
+                      {item.label}
+                      <ChevronDown className="h-4 w-4" />
+                    </span>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="border-border/70">
@@ -108,7 +109,7 @@ export default function Header() {
                           pathname === subItem.href ? "text-primary font-medium" : "text-foreground/90",
                         )}
                       >
-                        {subItem.label}
+                        <span>{subItem.label}</span>
                       </Link>
                     </DropdownMenuItem>
                   ))}
@@ -124,7 +125,9 @@ export default function Header() {
             asChild
             className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-2 text-sm font-medium"
           >
-            <Link href="/kontakt">Kontaktujte nás</Link> {/* Translated */}
+            <Link href="/kontakt">
+              <span>Kontaktujte nás</span>
+            </Link>
           </Button>
         </nav>
 
@@ -133,8 +136,10 @@ export default function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-foreground hover:bg-foreground/5">
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Prepnúť navigáciu</span>
+                <span className="flex items-center">
+                  <MenuIcon className="h-6 w-6" />
+                  <span className="sr-only">Prepnúť navigáciu</span>
+                </span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs border-l-border/70">
@@ -149,7 +154,9 @@ export default function Header() {
                 </Link>
                 <SheetClose asChild>
                   <Button variant="ghost" size="icon" className="text-foreground hover:bg-foreground/10">
-                    <XIcon className="h-6 w-6" />
+                    <span className="flex items-center">
+                      <XIcon className="h-6 w-6" />
+                    </span>
                   </Button>
                 </SheetClose>
               </div>
@@ -165,7 +172,7 @@ export default function Header() {
                             "block px-2 py-2 rounded-md hover:bg-foreground/5 text-base font-medium",
                           )}
                         >
-                          {item.label}
+                          <span>{item.label}</span>
                         </Link>
                       </SheetClose>
                       {item.subItems?.slice(1).map(
@@ -180,7 +187,7 @@ export default function Header() {
                                 "block pl-6 pr-2 py-2 rounded-md hover:bg-foreground/5 text-base",
                               )}
                             >
-                              {subItem.label}
+                              <span>{subItem.label}</span>
                             </Link>
                           </SheetClose>
                         ),
@@ -195,7 +202,7 @@ export default function Header() {
                           "block px-2 py-2 rounded-md hover:bg-foreground/5 text-base",
                         )}
                       >
-                        {item.label}
+                        <span>{item.label}</span>
                       </Link>
                     </SheetClose>
                   ),
@@ -205,7 +212,9 @@ export default function Header() {
                     asChild
                     className="w-full mt-6 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full"
                   >
-                    <Link href="/kontakt">Kontaktujte nás</Link>
+                    <Link href="/kontakt">
+                      <span>Kontaktujte nás</span>
+                    </Link>
                   </Button>
                 </SheetClose>
               </nav>

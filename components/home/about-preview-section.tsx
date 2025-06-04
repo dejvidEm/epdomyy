@@ -10,7 +10,7 @@ export default function AboutPreviewSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Budujeme dôveru, tehlu po tehle</h2>{" "}
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Budujeme dôveru, tehlu po tehle</h2>
             {/* Translated */}
             <p className="text-muted-foreground text-lg mb-6">
               Už viac ako 15 rokov sa Skyline Domy venuje výstavbe vysokokvalitných a udržateľných domov. Náš záväzok k
@@ -31,7 +31,7 @@ export default function AboutPreviewSection() {
               </li>
             </ul>
             <Button asChild size="lg">
-              <Link href="/o-nas">Zistite viac o nás</Link> {/* Translated */}
+              <Link href="/o-nas"><span>Zistite viac o nás</span></Link>
             </Button>
           </div>
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">

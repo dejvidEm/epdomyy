@@ -2,7 +2,6 @@ import { getHouseBySlug, houses } from "@/lib/data"
 import { notFound } from "next/navigation"
 import AnimatedSection from "@/components/animated-section"
 import ImageGallery from "@/components/ui/image-gallery"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { BedDouble, Bath, Square, CheckCircle, Tag } from "lucide-react"
 
@@ -72,9 +71,9 @@ export default async function HouseDetailPage({ params }: HouseDetailPageProps) 
                 </li>
               ))}
             </ul>
-            <Button asChild size="lg" className="w-full">
+            <button className="w-full">
               <Link href="/contact">Inquire About This Design</Link>
-            </Button>
+            </button>
           </div>
         </div>
         <div className="container mx-auto px-4 md:px-6 mt-12">

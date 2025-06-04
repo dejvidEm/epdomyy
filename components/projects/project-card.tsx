@@ -45,7 +45,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <CardFooter>
         <Button asChild variant="default" className="w-full">
           <Link href={`/nase-realizacie/${project.slug}`}>
-            Zobraziť projekt <ArrowRight className="h-4 w-4 ml-2" /> {/* Translated */}
+            <span className="flex items-center justify-center">
+              Zobraziť projekt <ArrowRight className="h-4 w-4 ml-2" />
+            </span>
           </Link>
         </Button>
       </CardFooter>
