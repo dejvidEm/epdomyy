@@ -4,7 +4,7 @@ import { Mail, Phone, MapPinIcon } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <>
+    <div>
       <AnimatedSection className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
@@ -64,6 +64,6 @@ export default function ContactPage() {
           </div>
         </div>
       </AnimatedSection>
-    </>
+    </div>
   )
 }
