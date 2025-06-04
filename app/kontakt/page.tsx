@@ -5,16 +5,16 @@ import { Mail, Phone, MapPinIcon } from "lucide-react"
 export default function ContactPage() {
   return (
     <div>
-      <AnimatedSection className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
+      <section className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             We're here to answer your questions and help you start your dream home journey. Reach out to us today!
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
@@ -63,7 +63,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
     </div>
   )
 }
