@@ -26,7 +26,7 @@ export default async function HouseDetailPage({ params }: HouseDetailPageProps) 
 
   return (
     <>
-      <AnimatedSection className="bg-muted py-12 md:py-16">
+      <AnimatedSection className="bg-muted pb-12 pt-12 md:pt-48 md:pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">{house.name}</h1>
           <p className="text-lg text-muted-foreground">{house.shortDescription}</p>

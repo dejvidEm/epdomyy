@@ -104,8 +104,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Správa</FormLabel> {/* Translated */}
               <FormControl>
-                <Textarea placeholder="Povedzte nám viac o vašom projekte alebo otázke..." rows={6} {...field} />{" "}
-                {/* Translated */}
+                <Textarea placeholder="Povedzte nám viac o vašom projekte alebo otázke..." rows={6} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

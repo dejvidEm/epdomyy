@@ -7,9 +7,9 @@ export default function CatalogPage() {
     <>
       <AnimatedSection className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our House Catalog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Náš aktuálny katalóg domov</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Explore our diverse range of thoughtfully designed homes, ready to be customized to your lifestyle.
+            Preskúmajte našu rozmanitú ponuku premyslene navrhnutých domov, pripravených na prispôsobenie vášmu životnému štýlu.
           </p>
         </div>
       </AnimatedSection>

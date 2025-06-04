@@ -61,7 +61,7 @@ export default function Header() {
 
   return (
     <header
-      className={cn("fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ease-in-out", "pt-4 md:pt-6")}
+      className={cn("fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ease-in-out", "pt-4 md:pt-6 px-4")}
     >
       <div
         className={cn(
@@ -73,7 +73,7 @@ export default function Header() {
       >
         <Link href="/" className="flex items-center gap-2 text-foreground" onClick={() => setIsMobileMenuOpen(false)}>
           <Orbit className="h-7 w-7 text-primary" />
-          <span className="text-xl font-semibold">Skyline Domy</span> {/* Translated */}
+          <span className="text-2xl font-semibold"><span className="font-bold">EP</span>Domy</span> {/* Translated */}
         </Link>
 
         <nav className="hidden md:flex gap-4 items-center">

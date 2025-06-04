@@ -59,18 +59,18 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="absolute right-4 md:right-10 lg:right-16 bottom-10 hidden md:block"
+          className="absolute right-4 md:right-10 lg:right-16 -bottom-80 hidden md:block"
         >
-          <div className="relative w-24 h-24">
-            <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow fill-current text-foreground/80">
+          <div className="relative w-64 h-64">
+            <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow fill-current text-foreground/70">
               <path id="circlePathHero" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
               <text dy="5">
-                <textPath href="#circlePathHero" startOffset="0%" className="text-xs tracking-wider uppercase">
+                <textPath href="#circlePathHero" startOffset="5%" className="text-[10px] tracking-wider uppercase">
                   {scrollIndicatorText}
                 </textPath>
               </text>
             </svg>
-            <ArrowDown className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 text-foreground/80" />
+            <ArrowDown className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 text-foreground" />
           </div>
         </motion.div>
       </div>
