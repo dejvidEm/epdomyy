@@ -13,7 +13,7 @@ export default function AboutPreviewSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Budujeme dôveru, tehlu po tehle</h2>
             {/* Translated */}
             <p className="text-muted-foreground text-lg mb-6">
-              Už viac ako 15 rokov sa Skyline Domy venuje výstavbe vysokokvalitných a udržateľných domov. Náš záväzok k
+              Už viac ako 15 rokov sa EPDomy venuje výstavbe vysokokvalitných a udržateľných domov. Náš záväzok k
               remeselnej zručnosti, inováciám a spokojnosti klientov nás odlišuje. {/* Translated */}
             </p>
             <ul className="space-y-3 mb-8">

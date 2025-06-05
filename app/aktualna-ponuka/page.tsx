@@ -5,8 +5,20 @@ import { houses } from "@/lib/data"
 export default function CatalogPage() {
   return (
     <>
-      <AnimatedSection className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
-        <div className="container mx-auto px-4 md:px-6 text-center">
+      <AnimatedSection className="relative text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24 overflow-hidden">
+        {/* Pozadie – fotka */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/banner.jpg" // ← uprav podľa reálnej cesty
+            alt="Pozadie katalógu domov"
+            className="w-full h-full object-cover"
+          />
+          {/* Zatemnenie */}
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+
+        {/* Obsah */}
+        <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Náš aktuálny katalóg domov</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Preskúmajte našu rozmanitú ponuku premyslene navrhnutých domov, pripravených na prispôsobenie vášmu životnému štýlu.

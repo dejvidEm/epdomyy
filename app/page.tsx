@@ -2,6 +2,7 @@ import HeroSection from "@/components/home/hero-section"
 import AboutPreviewSection from "@/components/home/about-preview-section"
 import FeaturedItemsSection from "@/components/home/featured-items-section"
 import { houses, projects } from "@/lib/data"
+import { ReviewCarousel } from "@/components/reviews"
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         viewAllLink="/nase-realizacie"
         itemType="nase-realizacie"
       />
+      <ReviewCarousel/>
     </>
   )
 }

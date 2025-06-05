@@ -8,10 +8,10 @@ export default function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-2 mb-4">
             <MountainIcon className="h-7 w-7 text-primary" /> {/* Or your actual logo icon */}
-            <span className="font-bold text-xl text-foreground">Skyline Domy</span> {/* Translated */}
+            <span className="font-bold text-xl text-foreground">EPDomy</span> {/* Translated */}
           </Link>
           <p className="text-sm">
-            Staviame vaše sny, jeden dom po druhom. Kvalitná výstavba a inovatívny dizajn od roku 2005.{" "}
+            Staviame vaše sny, jeden dom po druhom. Kvalitná výstavba a inovatívny dizajn od roku 2015.{" "}
             {/* Translated */}
           </p>
         </div>
@@ -49,13 +49,13 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-sm">Stavebná ulica 123, Mesto Stavieb, SK 54321</p> {/* Translated */}
-          <p className="text-sm">Email: info@skylinedomy.sk</p> {/* Translated */}
-          <p className="text-sm">Telefón: (012) 345-6789</p> {/* Translated */}
+          <p className="text-sm">Email: info@epdomy.sk</p> {/* Translated */}
+          <p className="text-sm">Telefón: 0911 123 456</p> {/* Translated */}
         </div>
       </div>
       <div className="border-t border-border">
         <div className="container mx-auto px-4 md:px-6 py-6 text-center text-sm">
-          &copy; {new Date().getFullYear()} Skyline Domy. Všetky práva vyhradené. {/* Translated */}
+          &copy; {new Date().getFullYear()} EPomy. Všetky práva vyhradené. {/* Translated */}
         </div>
       </div>
     </footer>

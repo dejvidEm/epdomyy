@@ -5,12 +5,23 @@ import { projects } from "@/lib/data"
 export default function ProjectsPage() {
   return (
     <>
-      <AnimatedSection className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
+      <AnimatedSection className="relative text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24 overflow-hidden">
+        {/* Pozadie – fotka */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/banner.jpg" // ← uprav podľa reálnej cesty
+            alt="Pozadie katalógu domov"
+            className="w-full h-full object-cover"
+          />
+          {/* Zatemnenie */}
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+
+        {/* Obsah */}
+        <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Náše projekty</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Discover the quality and craftsmanship in our completed homes. Each project tells a unique story of
-            collaboration and vision.
+            Prehľad našich posledných hotových projektov domov na kľúč, ktoré spájajú funkčnosť, estetiku a kvalitu bez kompromisov.
           </p>
         </div>
       </AnimatedSection>
