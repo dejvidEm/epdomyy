@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Skyline Domy - Rozširujeme Obzory", // Translated
+  title: "EPDomy - Rozširujeme Obzory", // Translated
   description:
     "Tvoríme mestské majstrovské diela, redefinujeme panorámy miest plynulým začlenením moderných nehnuteľností do ikonických, dynamických panorám.", // Translated
     generator: 'v0.dev'
