@@ -6,9 +6,9 @@ export default function ContactPage() {
     <div>
       <section className="bg-primary text-primary-foreground pb-16 pt-32 md:pt-48 md:pb-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Spojme sa!</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            We're here to answer your questions and help you start your dream home journey. Reach out to us today!
+            Sme tu pre Vás aby sme Vám odpovedali na všetky otázky
           </p>
         </div>
       </section>
@@ -16,12 +16,12 @@ export default function ContactPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+            <h2 className="text-3xl font-bold mb-6">Napíšte Nám správu</h2>
             <ContactForm />
           </div>
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+              <h2 className="text-3xl font-bold mb-6">Kontaktné informácie</h2>
               <div className="space-y-4 text-lg">
                 <p className="flex items-start gap-3">
                   <MapPinIcon className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
@@ -30,22 +30,22 @@ export default function ContactPage() {
                 <p className="flex items-center gap-3">
                   <Phone className="h-6 w-6 text-primary flex-shrink-0" />
                   <a href="tel:+11234567890" className="hover:text-primary">
-                    (123) 456-7890
+                    +421 911 123 456
                   </a>
                 </p>
                 <p className="flex items-center gap-3">
                   <Mail className="h-6 w-6 text-primary flex-shrink-0" />
                   <a href="mailto:info@turnkeyhomes.com" className="hover:text-primary">
-                    info@turnkeyhomes.com
+                    info@epdomy.sk
                   </a>
                 </p>
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Business Hours</h3>
-              <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p className="text-muted-foreground">Saturday: 10:00 AM - 2:00 PM (By Appointment)</p>
-              <p className="text-muted-foreground">Sunday: Closed</p>
+              <h3 className="text-2xl font-semibold mb-4">Otváracie hodiny</h3>
+              <p className="text-muted-foreground">Pondelok - Piatok: 9:00 - 5:00</p>
+              <p className="text-muted-foreground">Sobota: 10:00 - 2:00</p>
+              <p className="text-muted-foreground">Nedela: Zatvorené</p>
             </div>
             {/* Optional: Add a map embed here */}
             <div className="aspect-video bg-muted rounded-lg overflow-hidden">
